@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainLayoutActivity">
+    <!--<a href="https://www.freepik.es/vector-gratis/diseno-fondo-abstracto-luces-neon_9694001.htm#position=2&query=fondoneon">Imagen de pikisuperstar</a> en Freepik-->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#CFCCD6"
+        android:text="Bienvenido"
+        android:textColor="#4ED4E4"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:drawableLeft="@drawable/ic_baseline_password_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <CheckBox
+        android:id="@+id/chkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:onClick="logChk"
+        android:text="Mantener sesion iniciada"
+        android:textColor="#00FFCC"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.013"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:text="¿Tienes una cuenta?, Inicia sesión."
+        android:textAlignment="center"
+        android:textColor="#00FFCC"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textColor="#00FFCC"
+        android:text="¿Primera vez usando la app?, registrate ;)."
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/rounded_btn_layout"
+        android:onClick="Logbtn"
+        android:text="Ingresar"
+        app:layout_constraintTop_toBottomOf="@+id/chkBox"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/btn_border_layout"
+        android:onClick="regView"
+        android:text="Registrarse"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <!--<TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:textAlignment="center"
+        android:text="Olvidaste la contraseña? pincha aquí"
+        android:textColor="#00FFCC"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />-->
+
+
+</android.support.constraint.ConstraintLayout>

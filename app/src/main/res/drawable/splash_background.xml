@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <bitmap
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:src="@drawable/launcher_bckground2" />
+</item>
+</layer-list>
+<!--<a href="https://www.freepik.es/vector-gratis/fondo-galaxia-degradado_15292647.htm?query=fondoneon">Imagen de pikisuperstar</a> en Freepik-->
