@@ -2,7 +2,7 @@ package com.example.newapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -15,7 +15,7 @@ public class MainLayoutActivity extends AppCompatActivity {
     private EditText Email;
     private EditText Password;
 
-    @SuppressLint("MissingInflatedId")
+    //@SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +39,13 @@ public class MainLayoutActivity extends AppCompatActivity {
         }
     }
     //================== LLAMADOS DE ACTIVITIES ============================
-    public void Logbtn (View logv){
+    /**public void Logbtn (View logv){
         Intent inte = new Intent(this, MainRecyclerView.class);
+        System.out.println("llamado de login");
+        startActivity(inte);
+    }**/
+    public void Logbtn (View logv){
+        Intent inte = new Intent(this, Main_navbar.class);
         System.out.println("llamado de login");
         startActivity(inte);
     }
