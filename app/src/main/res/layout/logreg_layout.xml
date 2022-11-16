@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainLayoutActivity">
+    tools:context=".MainActivity">
     <!--<a href="https://www.freepik.es/vector-gratis/diseno-fondo-abstracto-luces-neon_9694001.htm#position=2&query=fondoneon">Imagen de pikisuperstar</a> en Freepik-->
     <TextView
         android:id="@+id/welcome"

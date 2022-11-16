@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import com.example.newapp.R;
 
 
-public class Fragment_home extends Fragment {
+public class Home_Fragment extends Fragment {
 
-    public Fragment_home() {
+    public Home_Fragment() {
         // Required empty public constructor
     }
 

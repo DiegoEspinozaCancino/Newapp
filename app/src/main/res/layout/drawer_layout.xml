@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/frame_bckground"
     tools:openDrawer="start"
-    tools:context=".Main_navbar"
+    tools:context=".NavDrawer"
     >
     <include
         layout="@layout/mainbar_layout"

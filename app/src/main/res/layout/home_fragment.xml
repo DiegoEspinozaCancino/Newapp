@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@drawable/frame_bckground"
-    tools:context=".ui.Fragment_home">
+    tools:context=".ui.Home_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -12,25 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31" >
+        <activity
+            android:name=".ui.music.MusicPlayerActivity"
+            android:exported="false">
+        </activity>
 
         <activity
-            android:name=".MainLayoutActivity"
+            android:name=".MainActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Main_navbar"
+            android:name=".NavDrawer"
             android:exported="false" />
         <activity
-            android:name=".MainRecyclerView"
+            android:name=".RecyclerView"
             android:exported="false" />
         <activity
-            android:name=".MainRegister"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" >
             <intent-filter>

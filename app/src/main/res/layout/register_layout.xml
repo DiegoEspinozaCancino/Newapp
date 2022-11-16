@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/neon"
-    tools:context=".MainRegister"
+    tools:context=".RegisterActivity"
     >
     <!-- <a href="https://www.freepik.es/vector-gratis/fondo-degradado-luces-neon_15292686.htm#page=2&query=fondo%20neon&position=35&from_view=keyword">Imagen de pikisuperstar</a> en Freepik-->
 

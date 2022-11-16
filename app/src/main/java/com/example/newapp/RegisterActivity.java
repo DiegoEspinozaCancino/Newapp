@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.Spinner;
 
-public class MainRegister extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class RegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     String [] genre = {"Seleccione género", "Masculino", "Femenino", "No binario", "Otros"};
     //private EditText editText;
     @Override

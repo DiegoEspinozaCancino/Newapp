@@ -3,14 +3,13 @@ package com.example.newapp;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainRecyclerView extends AppCompatActivity {
+public class RecyclerView extends AppCompatActivity {
 
-    private RecyclerView recyclerViewUser;
+    private androidx.recyclerview.widget.RecyclerView recyclerViewUser;
     private  RecyclerAdapter userAdapter;
 
 
@@ -19,7 +18,7 @@ public class MainRecyclerView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_recycler);
 
-        recyclerViewUser = (RecyclerView)findViewById(R.id.recyclerUsers);
+        recyclerViewUser = (androidx.recyclerview.widget.RecyclerView)findViewById(R.id.recyclerUsers);
         recyclerViewUser.setLayoutManager(new LinearLayoutManager(this));
 
         userAdapter = new RecyclerAdapter(gettingUsers());

@@ -1,19 +1,23 @@
 <resources>
-    <string name="app_name">Newapp</string>
+    <string name="app_name">IOLEDPlayer</string>
     <string name="spinner_title">Spinner</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <!-- NavDrawer -->
     <string name="OpenDrawer">Open navigation drawer</string>
     <string name="CloseDrawer">Close navigation drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Register form -->
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="telefono">Teléfono</string>
     <string name="email">Email</string>
     <string name="contraseña">Contraseña</string>
+    <!-- Menu -->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_user">Cuenta</string>
+    <string name="menu_musicplayer">Reproductor de música</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_activities">Actividades</string>
+    <string name="menu_credits">Créditos</string>
+    <string name="credits_text">Aplicación con fines de entretenimiento, nada concreto por confirmar.... Fondos de pantalla creados en FreePic por el usuario pikisuperstar</string>
 
-
-
-    <string name="creditos">Aplicación con fines de entretenimiento, nada concreto por confirmar.... Fondos de pantalla creados en FreePic por pikisuperstar</string>
 
 </resources>
