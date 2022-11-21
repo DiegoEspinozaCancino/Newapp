@@ -1,15 +1,16 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
     namespace 'com.example.newapp'
-    compileSdk 32
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.example.newapp"
         minSdk 23
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -43,7 +44,32 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.0.0-rc02'
     implementation 'androidx.navigation:navigation-ui:2.0.0-rc02'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    //IMPORTS
+                                                //MAPBOX API
+    implementation 'com.mapbox.maps:android:10.8.1'
+    implementation("com.google.android.gms:play-services-location:18.0.0")
+
+    //MUSIC PLAYER
+                                                //anim_recycler
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
+                                                //exoplayer
+    implementation'com.google.android.exoplayer:exoplayer:2.17.0'
+                                                //circleimage
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+                                                //audio visualizer
+    implementation 'io.github.gautamchibde:audiovisualizer:2.2.5'
+                                                //palettes for extracting colors
+    implementation 'androidx.palette:palette:1.0.0'
+                                                //blur imageview --- ERROR SYNC AND EXECUTE?
+    //implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+                                                //FIREBASE
+    implementation 'com.google.firebase:firebase-auth:21.0.8'
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+
+
 }

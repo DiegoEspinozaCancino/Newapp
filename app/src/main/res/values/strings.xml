@@ -1,23 +1,46 @@
 <resources>
     <string name="app_name">IOLEDPlayer</string>
     <string name="spinner_title">Spinner</string>
-    <!-- NavDrawer -->
-    <string name="OpenDrawer">Open navigation drawer</string>
-    <string name="CloseDrawer">Close navigation drawer</string>
-    <!-- Register form -->
+    <!-- LogIng Button -->
+    <string name="buttonlogin">Ingresar</string>
+
+    <!-- Register Button -->
+    <string name="buttonregister">Registrarse</string>
+
+    <!-- Register/Login form -->
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="telefono">Teléfono</string>
     <string name="email">Email</string>
     <string name="contraseña">Contraseña</string>
+
+    <!-- NavDrawer -->
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+
     <!-- Menu -->
     <string name="menu_home">Inicio</string>
     <string name="menu_user">Cuenta</string>
     <string name="menu_musicplayer">Reproductor de música</string>
     <string name="menu_settings">Ajustes</string>
-    <string name="menu_activities">Actividades</string>
+    <string name="menu_maps">Mapa</string>
     <string name="menu_credits">Créditos</string>
-    <string name="credits_text">Aplicación con fines de entretenimiento, nada concreto por confirmar.... Fondos de pantalla creados en FreePic por el usuario pikisuperstar</string>
+    <string name="credits_text">Creado por Diego Espinoza Cancino (A.K.A - Blze). Aplicación desarrollada con fines académicos y también de entretenimiento, sin fines de lucro.... Fondos de pantalla creados en FreePic por el usuario pikisuperstar</string>
+    <string name="menu_feedback">Pincha acá</string>
+    <string name="closelog">Finalizar sesión</string>
+
+
+    <!-- Mapa -->
+    <string name="mapbox_access_token">sk.eyJ1IjoiZGVzcGlub3phY2FuY2lubyIsImEiOiJjbDlmeWIyNTEyb3E0M3hsOXNsOGQzbmwzIn0.03V4B2F7s5am_3-h7pV90g</string>
+
+    <!-- Feedback form -->
+    <string name="botonenviar">Enviar Feedback</string>
+    <string name="feedbacktextsend">Hola, bienvenido al espacio de feedback, aquí podrás enviar comentarios, críticas, sugerencias, reportes de bugs que podrán ser implementadas en nuestra app como updates o parches que mejoren la experiencia de ustedes, los usuarios, sientánse libres de llenar el cuadro de texto ;).</string>
+    <string name="feedbacktextreceived">Gracias por tu mensaje;)</string>
+
+    <!-- SQLLite -->
+    <string name="editartitulo">Editar registro</string>
+    <string name="betaregform">Register Form [BETA]</string>
 
 
 </resources>

@@ -21,12 +21,31 @@
         <menu>
             <item
                 android:id="@+id/item5"
-                android:title="@string/menu_activities"
-                android:icon="@drawable/ic_library"/>
+                android:title="@string/menu_maps"
+                android:icon="@drawable/ic_location"/>
             <item
                 android:id="@+id/item6"
                 android:title="@string/menu_credits"
                 android:icon="@drawable/ic_notes"/>
         </menu>
     </item>
+    <item android:title="¿Feedback?">
+        <menu>
+            <item
+                android:id="@+id/item7"
+                android:title="@string/menu_feedback"
+                android:icon="@drawable/ic_comment"/>
+
+        </menu>
+    </item>
+    <item   android:title="Sesión">
+        <menu>
+            <item
+                android:id="@+id/item8"
+                android:title="@string/closelog"
+                android:icon="@drawable/ic_exit"/>
+        </menu>
+    </item>
+
+
 </menu>

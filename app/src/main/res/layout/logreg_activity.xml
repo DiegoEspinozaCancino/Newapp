@@ -36,7 +36,7 @@
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -53,7 +53,7 @@
         android:drawableLeft="@drawable/ic_baseline_password_24"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/contraseña"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -105,11 +105,11 @@
         android:textSize="17dp"
         android:textColor="#00FFCC"
         android:text="¿Primera vez usando la app?, registrate ;)."
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enter"
         tools:layout_editor_absoluteX="75dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_enter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -117,12 +117,12 @@
         android:layout_marginStart="44dp"
         android:background="@drawable/rounded_btn_layout"
         android:onClick="Logbtn"
-        android:text="Ingresar"
+        android:text="@string/buttonlogin"
         app:layout_constraintTop_toBottomOf="@+id/chkBox"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_reg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -130,9 +130,23 @@
         android:layout_marginStart="44dp"
         android:background="@drawable/btn_border_layout"
         android:onClick="regView"
-        android:text="Registrarse"
+        android:text="@string/buttonregister"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:layout_editor_absoluteX="148dp" />
+
+    <Button
+        android:id="@+id/btn_beta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/rounded_btn_layout"
+        android:onClick="regbetabtn"
+        android:text="REGISTRO [TEST - BETA]"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg" />
 
     <!--<TextView
         android:id="@+id/textView2"

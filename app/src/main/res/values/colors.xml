@@ -11,6 +11,10 @@
     <color name="light_blue">#45CEF8</color>
     <color name="light_purple">#AA5EFF</color>
 
+    <color name="colorPrimary">#6A1B9A</color>
+    <color name="colorPrimaryDark">#4A148C</color>
+    <color name="colorAccent">#D500F9</color>
+
 
 
 </resources>

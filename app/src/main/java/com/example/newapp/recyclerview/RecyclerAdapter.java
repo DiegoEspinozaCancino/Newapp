@@ -1,4 +1,4 @@
-package com.example.newapp;
+package com.example.newapp.recyclerview;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.newapp.R;
 
 import java.util.List;
 
