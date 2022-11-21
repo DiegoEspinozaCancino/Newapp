@@ -1,4 +1,4 @@
-package com.example.newapp;
+package com.example.newapp.recyclerview;
 
 public class UserModel {
     private String nombre,fecha;

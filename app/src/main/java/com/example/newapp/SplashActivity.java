@@ -15,10 +15,10 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
         Progressbar = (ProgressBar) findViewById(R.id.progressBar);
 
-    //================= RUNNABLE PROGRESS BAR ============================
+    //================= RUNNABLE PROGRESS BAR + THREAD ============================
         new Thread(new Runnable() {
             public void run() {
                 while (progress < 100) {

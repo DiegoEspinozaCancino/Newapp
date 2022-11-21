@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION.ACCESS_COARSE_LOTACION"/>
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31" >
+        <activity
+            android:name=".SQLLite.Leer"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SQLLite.Editar"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SQLLite.Agregar"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.feedback.ReceivedfeedbackActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.feedback.SendFeedbackActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.maps.MapsActivity"
+            android:exported="false">
+        </activity>
         <activity
             android:name=".ui.music.MusicPlayerActivity"
             android:exported="false">
@@ -28,7 +53,7 @@
             android:name=".NavDrawer"
             android:exported="false" />
         <activity
-            android:name=".RecyclerView"
+            android:name=".recyclerview.RecyclerView"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

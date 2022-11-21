@@ -14,6 +14,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.newapp.ui.Home_Fragment;
 import com.example.newapp.ui.account.UserFragment;
+import com.example.newapp.ui.feedback.SendFeedbackActivity;
+import com.example.newapp.ui.maps.MapsActivity;
 import com.example.newapp.ui.credits.CreditsFragment;
 import com.example.newapp.ui.music.MusicPlayerActivity;
 import com.google.android.material.navigation.NavigationView;
@@ -62,11 +64,16 @@ public class NavDrawer extends AppCompatActivity implements NavigationView.OnNav
             case R.id.item4:                                                        //SETTINGS
                 Toast.makeText(NavDrawer.this, "Ajustes", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.item5:                                                        //CLASS-ACTIVITIES
-                Toast.makeText(NavDrawer.this, "Actividades", Toast.LENGTH_SHORT).show();
+            case R.id.item5:                                                        //MAPS
+                Intent Mapintent = new Intent(this, MapsActivity.class);
+                startActivity(Mapintent);
                 break;
             case R.id.item6:                                                        //CREDITS
                 getSupportFragmentManager().beginTransaction().replace(R.id.container, new CreditsFragment()).commit();
+                break;
+            case R.id.item7:                                                        //FEEDBACK
+                Intent feedbckIntent = new Intent(this, SendFeedbackActivity.class);
+                startActivity(feedbckIntent);
                 break;
         }
         drawerLayout.closeDrawer((GravityCompat.START));

@@ -1,8 +1,10 @@
-package com.example.newapp;
+package com.example.newapp.recyclerview;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+
+import com.example.newapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
