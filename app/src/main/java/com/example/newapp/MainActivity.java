@@ -22,12 +22,11 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     private CheckBox chkSeleccionar;
-    private EditText email, password;              //   LOGIN
-    private Button loginbutton;                   //    CREDENTIALS
+    private EditText e_mail, passw;              //   LOGIN
+    //private Button loginbutton, btnregister;    //    CREDENTIALS
     FirebaseAuth mAuth;
 
 
-    //@SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,64 +34,34 @@ public class MainActivity extends AppCompatActivity {
         chkSeleccionar = (CheckBox) findViewById(R.id.chkBox); //CHECKBOX DATA
 
 
-        email = (EditText) findViewById(R.id.editTextTextEmailAddress);
-        password = (EditText) findViewById(R.id.editTextTextPassword);
-        loginbutton =(Button) findViewById(R.id.btn_enter);
-        mAuth = FirebaseAuth.getInstance(FirebaseApp.initializeApp(this));
+        e_mail = (EditText) findViewById(R.id.editTextTextEmailAddress);
+        passw = (EditText) findViewById(R.id.editTextTextPassword);
+        /**loginbutton = (Button) findViewById(R.id.btn_enter);
+        btnregister = (Button) findViewById(R.id.btn_reg);**/
 
-                                                            //LECTURA DE BUTTON LOGIN
-        loginbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                String emailUser = email.getText().toString().trim();
-                String passUser = password.getText().toString().trim();
-
-                if(emailUser.isEmpty() && passUser.isEmpty()){
-                    Toast.makeText(MainActivity.this, "Debes llenar los campos para ingresar", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    loginUser(emailUser,passUser);
-                }
-            }
-        });
-
+        mAuth = FirebaseAuth.getInstance();
     }
-                                                            //LOG DE CARGA DE DATOS DESDE LA DATA BASE
-    private void loginUser(String emailUser, String passUser) {
-        mAuth.signInWithEmailAndPassword(emailUser, passUser).addOnCompleteListener(new OnCompleteListener<AuthResult>(){
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task){
-                if (task.isSuccessful()) {
+    public void Logbtn(View view){
 
-                    finish();
-                    startActivity(new Intent(MainActivity.this, NavDrawer.class));
-                }
-                else{
-                    Toast.makeText(MainActivity.this, "WHOPS!... Hubo un error, intentelo nuevamente", Toast.LENGTH_LONG).show();
-                }
-
-            }
-        }).addOnFailureListener(new OnFailureListener(){
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(MainActivity.this, "Error al iniciar sesión", Toast.LENGTH_LONG).show();
-
-            }
-        });
-
-
-    }
-
-    @Override
-    protected void onStart(){
-        super.onStart();
-        FirebaseUser user = mAuth.getCurrentUser();
-        if(user != null){
-            startActivity(new Intent(MainActivity.this, NavDrawer.class));
+        try {
+            mAuth.signInWithEmailAndPassword(e_mail.getText().toString().trim(), passw.getText().toString())
+                    .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                Intent logInte = new Intent(MainActivity.this, NavDrawer.class);
+                                startActivity(logInte);
+                            } else {
+                                Toast.makeText(MainActivity.this, "WHOPS!... Hubo un error, verifique su correo y contraseña estén bien ingresadas", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }
+        catch(Exception e){
+            Toast.makeText(MainActivity.this, "Ha ocurrido un error, intentelo nuevamente", Toast.LENGTH_SHORT).show();
         }
     }
-
-
 
     //================== MAIN FORM VIEW ============================
 
@@ -116,10 +85,10 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("llamado de registro");
         startActivity(inte2);
     }
-                                        // SECOND REGISTER BUTTON [BETA]
+    /**                                    // SECOND REGISTER BUTTON [BETA]
     public void regbetabtn (View regdormv){
         Intent RegIntebeta = new Intent(this, Agregar.class);
         startActivity(RegIntebeta);
-    }
+    }**/
 
 }

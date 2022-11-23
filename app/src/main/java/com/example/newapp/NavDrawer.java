@@ -19,18 +19,21 @@ import com.example.newapp.ui.maps.MapsActivity;
 import com.example.newapp.ui.credits.CreditsFragment;
 import com.example.newapp.ui.music.MusicPlayerActivity;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class NavDrawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
    private DrawerLayout drawerLayout;
    private NavigationView navigationView;
    private Toolbar toolbar;
+   FirebaseAuth mAuth;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.drawer_layout);
+        mAuth = FirebaseAuth.getInstance();
         drawerLayout = (DrawerLayout) findViewById(R.id.DrawerLayout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         navigationView = (NavigationView) findViewById(R.id.navView);
@@ -77,10 +80,10 @@ public class NavDrawer extends AppCompatActivity implements NavigationView.OnNav
                 startActivity(feedbckIntent);
                 break;
             case R.id.item8:                                                        //Logout
-                Toast.makeText(NavDrawer.this, "Logout", Toast.LENGTH_SHORT).show();
-
-                /**Intent MainInte = new Intent(this, MainActivity.class);
-                startActivity(MainInte);**/
+                mAuth.signOut();
+                finish();
+                Intent logoutInte = new Intent(this, ActivityMainButtons.class);
+                startActivity(logoutInte);
                 break;
         }
         drawerLayout.closeDrawer((GravityCompat.START));

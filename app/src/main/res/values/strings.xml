@@ -1,18 +1,31 @@
 <resources>
     <string name="app_name">IOLEDPlayer</string>
     <string name="spinner_title">Spinner</string>
-    <!-- LogIng Button -->
+
+    <!-- Main Register/Login form -->
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="passconfirm">Confirme contraseña</string>
+
+
+    <!-- Login Button -->
     <string name="buttonlogin">Ingresar</string>
 
     <!-- Register Button -->
     <string name="buttonregister">Registrarse</string>
 
-    <!-- Register/Login form -->
-    <string name="nombre">Nombre</string>
-    <string name="apellido">Apellido</string>
-    <string name="telefono">Teléfono</string>
-    <string name="email">Email</string>
-    <string name="contraseña">Contraseña</string>
+    <!-- Register Strings-->
+    <string name="invalid_mail">Ingrese un mail válido</string>
+    <string name="invalid_password">Ingrese una contraseña mayor a 6 valores</string>
+    <string name="invalid_name">Ingrese un nombre</string>
+    <string name="invalid_lastname">Ingrese un apellido</string>
+    <string name="invalid_username">Ingrese un nombre de usuario válido válido</string>
+
+
+
 
     <!-- NavDrawer -->
     <string name="OpenDrawer">Open navigation drawer</string>

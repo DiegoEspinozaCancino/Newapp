@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "742979404158",
+    "project_id": "ioledplayer",
+    "storage_bucket": "ioledplayer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742979404158:android:8312492bbb4e858486b32f",
+        "android_client_info": {
+          "package_name": "com.example.newapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742979404158-9r97lut3n2sv41eh0k4lqlot1kja3020.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl-xUn3ehqwD3_VD0jcfKaBXnEyQmfWak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742979404158-9r97lut3n2sv41eh0k4lqlot1kja3020.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

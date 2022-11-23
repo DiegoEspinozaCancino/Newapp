@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.newapp"
-        minSdk 23
+        minSdk 21
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -45,6 +45,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.0.0-rc02'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
@@ -66,10 +67,12 @@ dependencies {
                                                 //palettes for extracting colors
     implementation 'androidx.palette:palette:1.0.0'
                                                 //blur imageview --- ERROR SYNC AND EXECUTE?
-    //implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+    implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
                                                 //FIREBASE
     implementation 'com.google.firebase:firebase-auth:21.0.8'
     implementation platform('com.google.firebase:firebase-bom:31.1.0')
+
+
 
 
 }
